@@ -1,6 +1,7 @@
 My Portfolio 🎨
 
 Welcome to my personal portfolio website, built using HTML, CSS, JavaScript, and a Node.js backend for the contact form functionality. This project showcases my skills, education, projects, and experience.
+---
 
 🚀 Table of Contents
 
@@ -17,12 +18,14 @@ Backend Setup
 Contact Form
 
 License
+---
 
 💼 About
 
 This is my personal portfolio website where I showcase my skills, education, projects, and achievements. It contains sections such as About Me, Education, Skills, Experience, and a Contact Form.
 
 The contact form is fully functional and connects to a Node.js backend, which stores submissions in MongoDB and sends email notifications using Nodemailer.
+---
 
 🛠️ Technologies Used
 Frontend
@@ -44,6 +47,7 @@ Express.js - Web framework
 MongoDB (via MongoDB Atlas) - For storing contact form data
 
 Nodemailer - For sending email notifications when a contact form is submitted
+---
 
 ⭐ Features
 
@@ -54,6 +58,7 @@ Interactive Navigation: Navigation bar highlights the current section as you scr
 Smooth Scrolling: Smooth transition between sections when navigation links are clicked.
 
 Contact Form: Users can send me a message through the contact form, which stores the data in MongoDB and sends me an email notification.
+---
 
 🏗️ Getting Started
 Prerequisites
@@ -69,6 +74,7 @@ Gmail App Password (for email functionality)
 Clone the repository
 git clone https://github.com/Afruja-Afrin/My-Portfolio.git
 cd My-Portfolio
+---
 
 ⚙️ Backend Setup
 1. Install dependencies
@@ -100,6 +106,7 @@ npm start
 
 
 Your backend will be running on http://localhost:5000.
+---
 
 📩 Contact Form
 
@@ -120,11 +127,12 @@ Mobile Number
 Email Subject
 
 Message
+---
 
 📜 License
 
-This project is open-source and available under the MIT License
-.
+This project is open-source and available under the MIT License.
+---
 
 📍 Usage
 
