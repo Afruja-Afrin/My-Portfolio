@@ -1,93 +1,28 @@
-My Portfolio 🎨
 
-Welcome to my personal portfolio website, built using HTML, CSS, JavaScript, and a Node.js backend for the contact form functionality. This project showcases my skills, education, projects, and experience.
----
 
-🚀 Table of Contents
+# MY PORTFOLIO🏫
 
-About
+## 🚀 Getting Started
 
-Technologies Used
+Follow these steps to set up the project on your local machine.
 
-Features
+### 1. Clone the Repository
 
-Getting Started
-
-Backend Setup
-
-Contact Form
-
-License
----
-
-💼 About
-
-This is my personal portfolio website where I showcase my skills, education, projects, and achievements. It contains sections such as About Me, Education, Skills, Experience, and a Contact Form.
-
-The contact form is fully functional and connects to a Node.js backend, which stores submissions in MongoDB and sends email notifications using Nodemailer.
----
-
-🛠️ Technologies Used
-Frontend
-
-HTML - Structure of the website
-
-CSS - Styling (with responsive design features)
-
-JavaScript - Interactive elements like smooth scrolling and dynamic content
-
-BoxIcons - Icons for UI elements
-
-Backend
-
-Node.js - Backend server
-
-Express.js - Web framework
-
-MongoDB (via MongoDB Atlas) - For storing contact form data
-
-Nodemailer - For sending email notifications when a contact form is submitted
----
-
-⭐ Features
-
-Responsive Design: Adapts to all screen sizes (desktop, tablet, and mobile).
-
-Interactive Navigation: Navigation bar highlights the current section as you scroll.
-
-Smooth Scrolling: Smooth transition between sections when navigation links are clicked.
-
-Contact Form: Users can send me a message through the contact form, which stores the data in MongoDB and sends me an email notification.
----
-
-🏗️ Getting Started
-Prerequisites
-
-Make sure you have the following installed:
-
-Node.js (LTS version recommended)
-
-MongoDB Atlas (for cloud database) or MongoDB locally
-
-Gmail App Password (for email functionality)
-
-Clone the repository
+```bash
 git clone https://github.com/Afruja-Afrin/My-Portfolio.git
 cd My-Portfolio
----
+```
 
-⚙️ Backend Setup
-1. Install dependencies
+### 2. Install Dependencies
 
-Go to the backend/ folder:
-
+```bash
 cd backend
 npm install
+```
 
-2. Create .env file
+### 3. Setup MongoDB Atlas
 
-Create a .env file in the backend/ folder and add the following environment variables:
-
+```
 MONGO_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority
 MONGO_DB=portfolio
 SMTP_HOST=smtp.gmail.com
@@ -97,43 +32,38 @@ SMTP_USER=your-gmail@gmail.com
 SMTP_PASS=your-app-password
 FROM_EMAIL=your-gmail@gmail.com
 TO_EMAIL=your-gmail@gmail.com
+```
 
-3. Run the backend
+### 4. Run the Backend Server
 
-To start the backend server, run:
-
+```bash
 npm start
+```
 
+The backend will be running at http://localhost:5000.
 
-Your backend will be running on http://localhost:5000.
 ---
 
-📩 Contact Form
+## 🛠️ Tech Stack
 
-The contact form is powered by Node.js, Express, and Nodemailer. When a user submits the form:
+### Frontend:
+- **HTML** – Used for the structure and content of the website.
+- **CSS** – Styling and layout of the website, ensuring it’s responsive.
+- **JavaScript** – Adds interactivity (smooth scrolling, active navigation).
+- **BoxIcons** – Used for icons in the navigation and social media links.
 
-The form data is stored in MongoDB under the contacts collection.
+### Backend:
+- **Node.js** – JavaScript runtime for backend logic.
+- **Express.js** – Framework for handling routing and HTTP requests.
+- **MongoDB** – Database to store contact form submissions.
+- **Nodemailer** – Sends email notifications when the contact form is submitted.
 
-An email is sent using Nodemailer to the specified email address.
+## Key Features:
+- **Frontend and Backend Separation**: Clean separation of client-side and server-side code for better organization.
+- **Responsive Design**: Ensures a seamless experience on mobile, tablet, and desktop devices using **CSS**.
+- **Interactive Frontend**: Smooth navigation and dynamic behavior powered by **JavaScript**.
+- **Contact Form Handling**: Backend routes manage form submissions, storing the data in **MongoDB Atlas** and sending email notifications via **Nodemailer**.
+- **Environment Configuration**: Sensitive data like credentials and database URI stored securely in **.env**.
+- **Scalable Structure**: Easy to expand with additional routes, models, or frontend features.
 
-The form takes the following fields:
-
-Full Name
-
-Email Address
-
-Mobile Number
-
-Email Subject
-
-Message
 ---
-
-📜 License
-
-This project is open-source and available under the MIT License.
----
-
-📍 Usage
-
-This portfolio demonstrates my skills, projects, and experience. The backend system handles contact form submissions, and the website is designed to give visitors easy access to my information.
