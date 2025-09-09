@@ -58,6 +58,8 @@ The backend will be running at http://localhost:5000.
 - **MongoDB** – Database to store contact form submissions.
 - **Nodemailer** – Sends email notifications when the contact form is submitted.
 
+---
+
 ## Key Features:
 - **Frontend and Backend Separation**: Clean separation of client-side and server-side code for better organization.
 - **Responsive Design**: Ensures a seamless experience on mobile, tablet, and desktop devices using **CSS**.
