@@ -44,26 +44,32 @@ The backend will be running at http://localhost:5000.
 
 ---
 
-## 🌟 Features
+## 🛠️ Tech Stack
 
-- Clean, responsive design
-- Project showcase section
-- About Me and Contact sections
-- Smooth scrolling and hover effects
-- Easily customizable structure
+### Frontend:
+- **HTML** – Used for the structure and content of the website.
+- **CSS** – Styling and layout of the website, ensuring it’s responsive.
+- **JavaScript** – Adds interactivity (smooth scrolling, active navigation).
+- **BoxIcons** – Used for icons in the navigation and social media links.
 
----
-
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+### Backend:
+- **Node.js** – JavaScript runtime for backend logic.
+- **Express.js** – Framework for handling routing and HTTP requests.
+- **MongoDB** – Database to store contact form submissions.
+- **Nodemailer** – Sends email notifications when the contact form is submitted.
 
 ---
 
-## 🚀 Getting Started
+## Key Features:
+- **Frontend and Backend Separation**: Clean separation of client-side and server-side code for better organization.
+- **Responsive Design**: Ensures a seamless experience on mobile, tablet, and desktop devices using **CSS**.
+- **Interactive Frontend**: Smooth navigation and dynamic behavior powered by **JavaScript**.
+- **Contact Form Handling**: Backend routes manage form submissions, storing the data in **MongoDB Atlas** and sending email notifications via **Nodemailer**.
+- **Environment Configuration**: Sensitive data like credentials and database URI stored securely in **.env**.
+- **Scalable Structure**: Easy to expand with additional routes, models, or frontend features.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Afruja-Afrin/My-Portfolio.git
+<<<<<<< HEAD
+---
+=======
+---
+>>>>>>> b1bcc18e6418635c3bd254f833fe3642f730d8c7
