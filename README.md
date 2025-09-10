@@ -58,18 +58,17 @@ The backend will be running at http://localhost:5000.
 - **MongoDB** – Database to store contact form submissions.
 - **Nodemailer** – Sends email notifications when the contact form is submitted.
 
+### Version Control
+- **Git & Github** – Tracks code changes and manages version control across project development and collaboration
+
 ---
 
-## Key Features:
-- **Frontend and Backend Separation**: Clean separation of client-side and server-side code for better organization.
-- **Responsive Design**: Ensures a seamless experience on mobile, tablet, and desktop devices using **CSS**.
-- **Interactive Frontend**: Smooth navigation and dynamic behavior powered by **JavaScript**.
-- **Contact Form Handling**: Backend routes manage form submissions, storing the data in **MongoDB Atlas** and sending email notifications via **Nodemailer**.
-- **Environment Configuration**: Sensitive data like credentials and database URI stored securely in **.env**.
-- **Scalable Structure**: Easy to expand with additional routes, models, or frontend features.
+## ✅ Key Features
 
-<<<<<<< HEAD
----
-=======
----
->>>>>>> b1bcc18e6418635c3bd254f833fe3642f730d8c7
+- Showcases your personal and professional identity.
+- Demonstrates your real-world problem-solving and coding skills.
+- Highlights selected projects in an organized, accessible format.
+- Enables direct communication through a built-in contact system.
+- Encourages collaboration and hiring with clear call-to-action buttons.
+- Provides a smooth and responsive experience across all devices.
+- Acts as a central hub for recruiters or clients to explore your work.
