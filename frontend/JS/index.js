@@ -1,9 +1,8 @@
-// ===== Keep nav highlighting on scroll (unchanged behavior) =====
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll("header nav a");
 
 function setActiveOnScroll() {
-  const top = window.scrollY + 120; // small offset for sticky header
+  const top = window.scrollY + 120;
 
   sections.forEach((sec) => {
     const start = sec.offsetTop;
@@ -21,31 +20,40 @@ function setActiveOnScroll() {
 window.addEventListener("scroll", setActiveOnScroll);
 setActiveOnScroll();
 
-// ===== Smooth scroll on nav click (no design changes) =====
+
 navLinks.forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     const href = this.getAttribute("href");
-    if (!href || !href.startsWith("#")) return; // allow normal links
+    if (!href || !href.startsWith("#")) return;
 
     e.preventDefault();
     const target = document.querySelector(href);
     if (!target) return;
 
     const headerOffset = document.querySelector('.header')?.offsetHeight || 0;
- // adjust only if section hides under header
     const y =
       target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
 
     window.scrollTo({ top: y, behavior: "smooth" });
 
-    // set active immediately on click
+    
     navLinks.forEach((l) => l.classList.remove("active"));
     this.classList.add("active");
   });
 });
 
-// ===== Contact form -> backend =====
-// ⚠️ Use localhost while testing, change to deployed URL later
+
+const letsTalkButton = document.querySelector('a[href="mailto:shayoriafrin50@gmail.com"]');
+if (letsTalkButton) {
+  letsTalkButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    
+    window.location.href = "mailto:shayoriafrin50@gmail.com?subject=Let's Talk";
+  });
+}
+
+
+//Contact form -> backend 
 const API_URL = "http://localhost:5000";
 
 const contactForm = document.getElementById("contact-form");
@@ -85,3 +93,5 @@ if (contactForm) {
     }
   });
 }
+
+
